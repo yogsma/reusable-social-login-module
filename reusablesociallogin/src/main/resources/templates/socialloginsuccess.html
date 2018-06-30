@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Social Login</title>
+</head>
+<body>
+<div class="portlet-body form">
+    <form th:action="@{/logout}" method="post">
+        <div class="form-body" style="margin-bottom:200px">
+            <h2 th:inline="text">Congrats! You're logged in as [[${#httpServletRequest.remoteUser}]]!</h2>
+            <input style="margin-top:30px" type="submit" class="btn blue" value="Logout"/>
+        </div>
+    </form>
+</div>
+</body>
+</html>
